@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header-landing {
+  height: 100vh;
+}
+
+#sidebar.active {
+  display: flex !important;
+}
+
+.faqD.active .body {
+  display: block;
+}
+
+.faqD.active .rotate {
+  transform: rotate(180deg);
+}
+.faqD,
+.rotate {
+  cursor: poManrope;
+  transition: transform 0.4s;
+}
+
+.faqD:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.r4-wrap {
+}
+
+.xxx2 {
+  display: flex;
+  gap: 128px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.xxx2 > div {
+  max-width: 115px;
+}
+
+.xxx2 > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.hoverr {
+  transition: transform 0.3s linear;
+}
+
+.hoverr:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.links:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.islot {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.islot > label {
+  font-size: 12px;
+  color: #c4c4c4;
+  font-weight: 600;
+  line-height: normal;
+}
+
+input {
+  outline: none;
+}
+
+.islot > input {
+  border-radius: 6px;
+  padding: 12px 16px;
+  background-color: #0a0a0a;
+  color: #f2f2f2;
+  width: 100%;
+}
+
+.leftsidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftsidebar > a {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 12px;
+}
+
+.leftsidebar > a.active {
+  background-color: #0a0a0a;
+  border: 1px solid #292929;
+  color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.withdrawal-CTA {
+  border-radius: 8px;
+  background: #B45309;
+  color: #f2f2f2;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 12px 24px;
+}
+
+#dashboard-side.active {
+  display: flex;
+}
+
+#sssd {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+}
+
+#sssw {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+}
+
+.errror {
+  border-left: 8px solid #800000;
+}
+.successs {
+  border-left: 8px solid #008037;
+}
+
+.spinner {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dddf {
+  border: 1px solid #cdcdcd;
+  width: 100%;
+}
+
+.tithov:hover {
+  transform: scale(1.08);
+  transition: all 0.35s;
+}
+
+@media only screen and (min-width: 1024px) {
+}
