@@ -50,7 +50,7 @@ export default function LOGIN() {
 
         if (token) {
           const { data } = await axios.put(
-            `http://localhost:5000/api/auth/resetpassword/${token}`,
+            process.env.NEXT_PUBLIC_API_BASE + `/api/auth/resetpassword/${token}`,
             { password, token },
             config
           );
